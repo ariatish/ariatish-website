@@ -1,0 +1,273 @@
+/******* Bootstrap Theming ********/
+
+$primary: #4bb5c3;
+$secondary: #efeffa;
+$border-color: #d9dbe3;
+$light: #FFFFFF;
+$dark: #1C1C1C;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "light": $light,
+    "dark": $dark,
+);
+
+@font-face {
+    font-family: 'Samim';
+    src: url('../samim-font/Samim.eot'); /* IE9 Compat Modes */
+    src: url('../samim-font/Samim.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../samim-font/Samim.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../samim-font/Samim.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../samim-font/Samim.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Samim';
+    src: url('../samim-font/Farsi-Digits/Samim-FD.eot'); /* IE9 Compat Modes */
+    src: url('../samim-font/Farsi-Digits/Samim-FD.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../samim-font/Farsi-Digits/Samim-FD.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../samim-font/Farsi-Digits/Samim-FD.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../samim-font/Farsi-Digits/Samim-FD.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Samim';
+    src: url('../samim-font/Samim-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../samim-font/Samim-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../samim-font/Samim-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../samim-font/Samim-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../samim-font/Samim-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Samim';
+    src: url('../samim-font/Farsi-Digits/Samim-Bold-FD.eot'); /* IE9 Compat Modes */
+    src: url('../samim-font/Farsi-Digits/Samim-Bold-FD.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../samim-font/Farsi-Digits/Samim-Bold-FD.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../samim-font/Farsi-Digits/Samim-Bold-FD.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../samim-font/Farsi-Digits/Samim-Bold-FD.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Samim';
+    src: url('../samim-font/Samim-Medium.eot'); /* IE9 Compat Modes */
+    src: url('../samim-font/Samim-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../samim-font/Samim-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../samim-font/Samim-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../samim-font/Samim-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Samim';
+    src: url('../samim-font/Farsi-Digits/Samim-Medium-FD.eot'); /* IE9 Compat Modes */
+    src: url('../samim-font/Farsi-Digits/Samim-Medium-FD.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../samim-font/Farsi-Digits/Samim-Medium-FD.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../samim-font/Farsi-Digits/Samim-Medium-FD.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../samim-font/Farsi-Digits/Samim-Medium-FD.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 600;
+}
+
+$font-family-sans-serif: 'Samim', sans-serif;
+
+$body-color: #16165A;
+
+$headings-color: $dark;
+
+$border-color: $border-color;
+
+$input-border-color: $border-color;
+
+$enable-responsive-font-sizes: true;
+
+$enable-rounded: false;
+
+$btn-focus-box-shadow: none;
+
+$btn-active-box-shadow: none;
+
+$input-btn-focus-box-shadow: none;
+
+$input-placeholder-color: #999999;
+
+@import "bootstrap/scss/bootstrap";
+
+
+/********** Custom CSS ************/
+
+.logo {
+    width: 100%;
+    height: 100%;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+.Logo-mobile {
+    width: 100%;
+    height: 100%;
+    max-height: 65px;
+    object-fit: contain;
+}
+
+.logo-footer {
+    height: 100%;
+    max-height: 65px;
+    object-fit: contain;
+}
+
+.product-pic {
+    height: 300px;
+
+    img {
+        object-fit: contain;
+        height: 100%;
+    }
+}
+@include media-breakpoint-up(xs) {
+    .product-pic {min-height: 118px; max-height: 543px;}
+}
+
+// HTML Codex
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+.font-weight-semi-bold {
+    font-weight: 600;
+}
+
+[class^=flaticon-]:before,
+[class*=" flaticon-"]:before,
+[class^=flaticon-]:after,
+[class*=" flaticon-"]:after {
+    font-size: inherit;
+    margin-left: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 20px 10px;
+    color: $dark;
+    outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: $primary;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link  {
+        padding: 5px 0px;
+    }
+}
+
+.navbar-vertical.navbar-light .navbar-nav .nav-link {
+    padding: 8px 30px;
+    border-bottom: 1px solid $secondary;
+}
+
+#header-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .3);
+    z-index: 1;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: $dark;
+}
+
+.section-title span {
+    position: relative;
+    background: #ffffff;
+    z-index: 1;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    margin-top: -1px;
+    background: $dark;
+}
+
+.offer img {
+    position: absolute;
+    max-width: 50%;
+    max-height: 90%;
+    bottom: 0;
+}
+
+.offer .text-md-right img {
+    left: 0;
+}
+
+.offer .text-md-left img {
+    right: 0;
+}
+
+.cat-item .cat-img img,
+.product-item .product-img img  {
+    transition: .5s;
+}
+
+.cat-item:hover .cat-img img,
+.product-item:hover .product-img img {
+    transform: scale(1.2);
+}
+
+.product-item .btn:hover {
+    color: $primary !important;
+}
+
+.contact-form .help-block ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 11;
+    -webkit-animation: action 1s infinite alternate;
+    animation: action 1s infinite alternate;
+}
+
+@-webkit-keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
